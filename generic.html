@@ -37,39 +37,72 @@
                 margin: 0 20px;
             }
         }
-        .recommendation-heading {
+        .guest-lectures-heading {
             margin-top: 30px;
             font-size: 1.8em;
-            text-align: left.
+            text-align: left;
         }
-        .recommendation-image {
+        .guest-lectures-image {
             display: flex;
             justify-content: center;
-            margin-top: 20px.
+            margin-top: 20px;
         }
-        .recommendation-image img {
+        .guest-lectures-image img {
             width: 100%;
-            max-width: 800px; /* Adjust width as needed */
+            max-width: 600px;
             border: 1px solid #ccc;
-            border-radius: 8px.
+            border-radius: 8px;
         }
         .certification-images {
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-top: 20px.
+            margin-top: 20px;
         }
         .certification-images img {
             width: 100%;
-            max-width: 500px; /* Adjust width as needed */
+            max-width: 500px;
             margin: 10px;
             border: 1px solid #ccc;
-            border-radius: 8px.
+            border-radius: 8px;
         }
         @media (min-width: 768px) {
             .certification-images {
                 flex-direction: row;
-                justify-content: center.
+                justify-content: center;
+            }
+        }
+        .skills-container {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+        }
+        .skills-list {
+            list-style: disc;
+            padding-left: 20px;
+            max-width: 800px;
+        }
+        .edu-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .edu-content {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .edu-logo {
+            width: 250px;  /* Doubled the width for better visibility */
+            height: auto;
+        }
+        @media (max-width: 768px) {
+            .edu-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .edu-logo {
+                margin-top: 10px;
             }
         }
     </style>
@@ -97,30 +130,47 @@
 
         <!-- Main -->
         <main id="main">
+            <!-- Motivational Quote -->
+            <blockquote style="font-style: italic; text-align: center; margin-top: 20px;">
+                "Data is more than numbers – it's the story behind every decision."
+            </blockquote>
+
             <!-- Post -->
             <section class="post">
                 <header class="major">
                     <h1>I am Kiran Kumar Chakkapally</h1>
                     <p>A passionate data enthusiast with a robust analytical background and a keen ability to uncover insights that drive strategic decisions and foster business growth.</p>
                 </header>
+                
+                <!-- My Story Section -->
                 <div class="bio">
-                    <h2>Educational Background</h2>
+                    <h2><i class="fas fa-user"></i> My Story</h2>
+                    <p>My journey began as a dedicated national Taekwondo player, competing in the Under-19 category and participating in numerous state and national championships. For over ten years, I pushed my limits, embracing discipline and resilience. Eventually, life led me to shift my focus to academics, and I embraced the challenge by pursuing a Bachelor's in Mechanical Engineering with a fully funded sports scholarship.</p>
+                    <p>After graduation, I joined KisanKraft Ltd as a Business Data Analyst. It was here that I discovered my passion for transforming data into actionable insights—driving efficiency, boosting revenue, and making an impact. This realization motivated me to deepen my skills, and in 2023, I moved to the United States to pursue a Master's in Information Systems with a focus on Business Data Analytics.</p>
+                    <p>Beyond data, I love teaching, spending time with my family, and enjoying moments with friends. My dream is to make a difference in the education and healthcare sectors, where I believe my skills can truly have an impact—whether it's improving learning outcomes or enhancing patient care through data-driven solutions.</p>
+
+                    <h2><i class="fas fa-graduation-cap"></i> Educational Background</h2>
                     <ul>
-                        <li><strong>Master of Science in Information Systems</strong><br>
-                            <strong>Major:</strong> Business Data Analytics<br>
-                            <strong>Central Michigan University</strong><br>
-                            <strong>Michigan, MI, USA</strong>
+                        <li class="edu-item">
+                            <div class="edu-content">
+                                <strong>Master of Science in Information Systems</strong> (2023 - 2024)<br>
+                                <strong>Major:</strong> Business Data Analytics<br>
+                                <strong>Central Michigan University</strong><br>
+                                <strong>Michigan, MI, USA</strong>
+                            </div>
+                            <img src="images/cmu.png" alt="Central Michigan University Logo" class="edu-logo">
                         </li>
                         <br>
-                        <li><strong>Bachelor of Technology</strong><br>
+                        <li>
+                            <strong>Bachelor of Technology</strong> (2017 - 2021)<br>
                             <strong>Major:</strong> Mechanical Engineering<br>
                             <strong>Jawaharlal Nehru Technological University</strong><br>
                             <strong>Hyderabad, India</strong>
                         </li>
                     </ul>
                     
-                    <h2>Work Experience</h2>
-                    <p><strong>Business Data Analyst - KisanKraft Limited (Agriculture Machinery Manufacturer)</strong></p>
+                    <h2><i class="fas fa-briefcase"></i> Work Experience</h2>
+                    <p><strong>Business Data Analyst - KisanKraft Limited (Agriculture Machinery Manufacturer)</strong> (2020 - 2022)</p>
                     <p>I worked as a Business Data Analyst for KisanKraft Limited with a passion for mechanical engineering. Here are some key contributions:</p>
                     <ul>
                         <li>Developed and implemented data models to optimize supply chain operations, reducing costs by 15%.</li>
@@ -129,23 +179,35 @@
                         <li>Collaborated with cross-functional teams to drive data-driven decision-making and strategic planning.</li>
                     </ul>
                     
-                    <h2>Athletic Discipline</h2>
+                    <h2><i class="fas fa-medal"></i> Athletic Discipline</h2>
                     <p>As a DAN 1 grade certified Taekwondo athlete from the World Taekwondo Headquarters, I have mastered dedication, discipline, and perseverance. These principles guide my approach to data analytics, driving process optimization and uncovering growth opportunities. I am also a state and national level medalist, which speaks to my competitive spirit and commitment to excellence.</p>
                     <div class="certification-images">
                         <img src="images/cert front.jpg" alt="DAN 1 Grade Certification Front">
                         <img src="images/cert back.jpg" alt="DAN 1 Grade Certification Back">
                     </div>
                     
-                    <h2>Looking Forward</h2>
+                    <h2><i class="fas fa-bullseye"></i> Looking Forward</h2>
                     <p>I am committed to excellence in data analysis and eager to leverage my skills and experiences to achieve success in future endeavors. Each project in my portfolio tells a unique story through data.</p>
+
+                    <h2><i class="fas fa-tools"></i> Skills</h2>
+                    <div class="skills-container">
+                        <ul class="skills-list">
+                            <li>SQL (MySQL), Data Modeling</li>
+                            <li>Tableau, Power BI (DAX), Data Visualization</li>
+                            <li>Python (Pandas, NumPy, SciPy), R Programming (dplyr, ggplot2, Shiny)</li>
+                            <li>ETL Processes, SAP ERP, Data Cleaning</li>
+                            <li>AWS and Azure Cloud Computing Essentials</li>
+                            <li>Advanced Excel (Modeling, PivotTables)</li>
+                        </ul>
+                    </div>
                 </div>
             </section>
             
-            <!-- Recommendation Section -->
-            <section class="recommendation">
-                <h2 class="recommendation-heading">Recommendations</h2>
-                <p>Here's what professionals have to say about my work:</p>
-                <div class="recommendation-image">
+            <!-- Guest Lectures Section -->
+            <section class="guest-lectures">
+                <h2 class="guest-lectures-heading"><i class="fas fa-chalkboard-teacher"></i> Guest Lectures</h2>
+                <p>Driven by my passion for teaching and working in education sector, I had the privilege of delivering guest lectures on Data Visualization using Tableau to graduate students under the mentorship of Professor Liu Ming at Central Michigan University.</p>
+                <div class="guest-lectures-image">
                     <a href="https://www.linkedin.com/in/kiran-chakkapally/" target="_blank">
                         <img src="images/Ming liu.png" alt="LinkedIn Recommendation from Ming Liu">
                     </a>
